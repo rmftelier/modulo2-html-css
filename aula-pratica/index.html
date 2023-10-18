@@ -4,6 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Loja Dandara</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Fontes -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap">
 </head>
 
 <body>
@@ -16,10 +23,11 @@
     </div>
 
     <nav>
-      <ul>
+      <ul id="menuNavegacao">
         <li>
-          <a href="#">
-            Início
+          <a id="btnInicio" href="#">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <strong>Início</strong>
           </a>
         </li>
         <li>
@@ -33,7 +41,7 @@
           </a>
         </li>
         <li>
-          <a href="#contatos">
+          <a href="#faleConosco">
             Fale Conosco
           </a>
         </li>
@@ -44,10 +52,10 @@
   <main> <!-- tag semântica para definir conteúdo principal -->
     <section>
       <h1>Nova coleção 2023</h1>
-      <h2>Ganhe <b>10%</b> off na 1ª compra</h2>
+      <h2 class="subtitulo">Ganhe <strong>10%</strong> off na 1ª compra</h2>
 
 
-      <ol>
+      <ol class="listaImagens">
         <li>
           <figure> <!-- tag semântica para criar caixa de imagem-->
             <img src="./img/1.jpg"
@@ -71,64 +79,72 @@
         </li>
       </ol>
 
-      <a href="https://www.cea.com.br">Clique aqui para conferir</a>
+      <a href="https://www.cea.com.br" target="_blank">
+        <p class="text-center">Clique aqui para conferir</p>
+      </a>
     </section>
 
 
     <section id="clientes">
-      <h2> Nossos Clientes </h2>
-      <article>
-        <h4>Maria Pereira</h4>
-        <h5>Avaliado em: 06/10/2023</h5>
+      <h3> Nossos Clientes </h3>
 
-        <figure>
-          <img src="" alt="">
-        </figure>
+      <div id="artigosClientes">
+        <article>
+          <h4>Maria Pereira</h4>
+          <h5>Avaliado em: 06/10/2023</h5>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur et sapien vel lobortis.
-          Curabitur placerat facilisis ligula eu suscipit. Nam euismod diam ac metus imperdiet vulputate. Quisque luctus
-          ornare vehicula. Duis quis erat vel magna pulvinar tempor in non velit. Phasellus eu tortor sed est varius
-          semper. Donec ullamcorper, velit nec volutpat lacinia, sapien erat vulputate mauris, ut sollicitudin ligula
-          enim vitae purus.
-        </p>
-      </article>
-      <article>
-        <h4>Maria Pereira</h4>
-        <h5>Avaliado em: 06/10/2023</h5>
+          <figure>
+            <img src="" alt="">
+          </figure>
 
-        <figure>
-          <img src="" alt="">
-        </figure>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur et sapien vel lobortis.
+            Curabitur placerat facilisis ligula eu suscipit. Nam euismod diam ac metus imperdiet vulputate. Quisque
+            luctus
+            ornare vehicula. Duis quis erat vel magna pulvinar tempor in non velit. Phasellus eu tortor sed est varius
+            semper. Donec ullamcorper, velit nec volutpat lacinia, sapien erat vulputate mauris, ut sollicitudin ligula
+            enim vitae purus.
+          </p>
+        </article>
+        <article>
+          <h4>Maria Pereira</h4>
+          <h5>Avaliado em: 06/10/2023</h5>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur et sapien vel lobortis.
-          Curabitur placerat facilisis ligula eu suscipit. Nam euismod diam ac metus imperdiet vulputate. Quisque luctus
-          ornare vehicula. Duis quis erat vel magna pulvinar tempor in non velit. Phasellus eu tortor sed est varius
-          semper. Donec ullamcorper, velit nec volutpat lacinia, sapien erat vulputate mauris, ut sollicitudin ligula
-          enim vitae purus.
-        </p>
-      </article>
-      <article>
-        <h4>Maria Pereira</h4>
-        <h5>Avaliado em: 06/10/2023</h5>
+          <figure>
+            <img src="" alt="">
+          </figure>
 
-        <figure>
-          <img src="" alt="">
-        </figure>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur et sapien vel lobortis.
+            Curabitur placerat facilisis ligula eu suscipit. Nam euismod diam ac metus imperdiet vulputate. Quisque
+            luctus
+            ornare vehicula. Duis quis erat vel magna pulvinar tempor in non velit. Phasellus eu tortor sed est varius
+            semper. Donec ullamcorper, velit nec volutpat lacinia, sapien erat vulputate mauris, ut sollicitudin ligula
+            enim vitae purus.
+          </p>
+        </article>
+        <article>
+          <h4>Maria Pereira</h4>
+          <h5>Avaliado em: 06/10/2023</h5>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur et sapien vel lobortis.
-          Curabitur placerat facilisis ligula eu suscipit. Nam euismod diam ac metus imperdiet vulputate. Quisque luctus
-          ornare vehicula. Duis quis erat vel magna pulvinar tempor in non velit. Phasellus eu tortor sed est varius
-          semper. Donec ullamcorper, velit nec volutpat lacinia, sapien erat vulputate mauris, ut sollicitudin ligula
-          enim vitae purus.
-        </p>
-      </article>
+          <figure>
+            <img src="" alt="">
+          </figure>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur et sapien vel lobortis.
+            Curabitur placerat facilisis ligula eu suscipit. Nam euismod diam ac metus imperdiet vulputate. Quisque
+            luctus
+            ornare vehicula. Duis quis erat vel magna pulvinar tempor in non velit. Phasellus eu tortor sed est varius
+            semper. Donec ullamcorper, velit nec volutpat lacinia, sapien erat vulputate mauris, ut sollicitudin ligula
+            enim vitae purus.
+          </p>
+        </article>
+      </div>
     </section>
 
     <section id="pedidos">
-      <h2> Meus pedidos </h2>
+      <h3> Meus pedidos </h3>
       <table>
         <!--- Cabeçalho da tabela -->
         <thead>
@@ -174,25 +190,24 @@
         </tbody>
       </table>
     </section>
+
+    <section id="faleConosco">
+      <h3>Fale conosco</h3>
+      <form>
+        <label>Nome:</label><br />
+        <input type="text" id="nome" placeholder="Digite o seu nome:" />
+        <label>E-mail:</label> <br />
+        <input type="email" id="emailPessoal" placeholder="Digite o seu e-mail:" />
+        <label>Mensagem:</label><br />
+        <textarea id="mensagem" placeholder="Digite aqui sua mensagem:"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
   </main>
 
-  <footer id="contatos">
-    <h2>Fale conosco</h2>
-    <form>
-      <label>Nome:</label>
-      <input type="text" id="nome" placeholder="Nome:" />
-      <br /><br />
-      <label>Email:</label>
-      <input type="email" id="email" placeholder="Email:" />
-      <br /><br />
-      <label>Mensagem:</label>
-      <textarea placeholder="Mensagem:"></textarea>
-      <br /><br />
-      <button type="submit">Enviar</button>
-    </form>
-
+  <footer>
+    <p>© Copyright | 2023 | Todos os direitos autorais reservados</p>
   </footer>
-
 </body>
 
 </html>
