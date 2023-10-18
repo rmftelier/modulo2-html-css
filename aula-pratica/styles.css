@@ -150,6 +150,61 @@ section h1 {
 
 
 /* fale conosco */
+#faleConosco {
+  background-color: #AEBFEB;
+
+}
+
+#faleConosco form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 15px;
+  align-items: flex-start;
+}
+
+#faleConosco label {
+  font-family: 'Inter';
+  font-size: 16px;
+  margin-top: 5px;
+
+}
+
+#faleConosco button {
+  border-radius: 10px;
+  border: 1px solid #313131;
+  background: #313131;
+  color: #fff;
+  width: 270px;
+  padding: 10px 15px;
+  margin: 0 auto;
+  /* Centraliza o botão horizontalmente */
+
+
+}
+
+#nome,
+#emailPessoal {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #AAAAAD;
+  background: #FFF;
+  padding: 10px 15px;
+  font-family: 'Inter';
+  margin-bottom: 5px;
+}
+
+#mensagem {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #AAAAAD;
+  background: #FFF;
+  padding: 10px 15px;
+  font-family: 'Inter';
+  height: 100%;
+  margin-bottom: 20px;
+
+}
 
 /* footer */
 footer {
@@ -162,6 +217,6 @@ footer p {
   text-align: left;
   padding: 15px;
   color: #ffff;
-  font-size: 20px;
+  font-size: 16px;
   padding: 42px;
 }
